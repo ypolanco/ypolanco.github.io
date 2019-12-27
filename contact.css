@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff8f8;
+    color: black;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: .5em;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: .5em;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.brand {
+    text-align: center;
+
+}
+
+.brand span {
+    color: rgba(223, 199, 83, 1);
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(256, 256, 256, 0.7);
+}
+
+.wrapper>* {
+    padding: 1em;
+
+}
+
+.fratInfo {
+    background: white;
+    border-bottom-style: solid;
+    border-color: saddlebrown;
+}
+
+.fratInfo h3,
+.fratInfo ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact {
+    background: rgba(223, 199, 83, 0.7);
+}
+
+/*LOGO*/
+#logo {
+    position: relative;
+    float: left;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 10px;
+    z-index: 1;
+
+}
+
+
+/* FORM STYLES  */
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label {
+    display: block;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+    background: #aa4908;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #69300a;
+    color: white;
+    outline: 0;
+    transition: background-color 1s ease-out;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+/* LARGE SCREENS  */
+
+@media(min-width:900px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper>* {
+        padding: 2em;
+
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .fratInfo h3,
+    .fratInfo ul {
+        text-align: left;
+    }
+
+    .fratInfo {
+        border-bottom: none;
+        border-right-style: solid;
+        border-color: saddlebrown;
+    }
+
+    #logo {
+        position: relative;
+        left: 150px;
+        top: -40px;
+    }
+}
