@@ -123,6 +123,41 @@ ul {
     display: none;
 }
 
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
+    /* STYLES GO HERE */
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper>* {
+        padding: 2em;
+
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .fratInfo h3,
+    .fratInfo ul {
+        text-align: left;
+    }
+
+    .fratInfo {
+        border-bottom: none;
+        border-right-style: solid;
+        border-color: saddlebrown;
+    }
+
+    #logo {
+        position: relative;
+        left: 100px;
+        top: -40px;
+    }
+}
+
 /* LARGE SCREENS  */
 
 @media(min-width:999px) {
@@ -160,11 +195,20 @@ ul {
 
 /* iphone Screens  */
 
-
+/* 
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
-    #logo {
-        position: relative;
-        left: 20px;
-        top: -40px;
+
+    .container {
+        max-width: 1125px;
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: .1em;
     }
+
 }
+
+#logo {
+    position: relative;
+    left: 20px;
+    top: -40px;
+} */
