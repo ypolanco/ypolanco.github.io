@@ -124,14 +124,15 @@ ul {
 }
 
 
-/* medium Screens  */
-@media(min-width:935px) {
+/* iphone Screens  */
+
+
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
     #logo {
         position: relative;
         left: 20px;
         top: -40px;
     }
-
 }
 
 /* LARGE SCREENS  */
