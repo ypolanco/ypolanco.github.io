@@ -2,71 +2,833 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LUL Eta Chapter</title>
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="icon" href="/contact form/img/logo.png" type="image/png">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="main.css">
+  <meta charset="utf-8">
+  <title>La Unidad Latina - Eta Chapter</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/crest.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
 
 <body>
-    <img src="img/logo.png" alt="Logo" id="logo">
-    <div class="container">
-        <!-- <img src="img/logo.png" alt="Logo" id="logo"> -->
-        <h1 class="brand">Eta Chapter Contact Form</h1>
-        <div class="wrapper animated bounceInLeft">
-            <div class="fratInfo">
-                <h3>Important</h3>
-                <ul>
-                    <li>Hermanos, If you are still an undergraduate please enter your anticipated graduation year. </li>
-                    <li>Thank You - YP</li>
 
-                </ul>
-            </div>
-            <div class="contact">
-                <h3>Please enter your information below</h3>
-                <div class="alert">Thank You Hermano!</div>
-                <form id="contactForm">
-                    <p>
-                        <label>First Name</label>
-                        <input type="text" name="firstName" id="firstName" required>
-                    </p>
-                    <p>
-                        <label>Last Name</label>
-                        <input type="text" name="lastName" id="lastName" required>
-                    </p>
-                    <p>
-                        <label>Address</label>
-                        <input type="text" name="address" id="address" required>
-                    </p>
-                    <p>
-                        <label>Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </p>
-                    <p>
-                        <label>Phone</label>
-                        <input type="tel" name="phone" id="phone" required>
-                    </p>
-                    <p>
-                        <label>Graduation Year</label>
-                        <input type="number" name="gradYear" id="gradYear" required>
-                    </p>
-                    <p class="full">
-                        <button type="submit">Submit</button>
-                    </p>
-                </form>
-            </div>
-        </div>
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="#intro" class="scrollto"><img src="img/lul_crest.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#speakers">La Unidad Latina</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="buy-tickets"><a href="#buy-tickets">Hermano Login</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
     </div>
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
-    <script src="main.js"></script>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container wow fadeIn">
+      <h1 class="mb-4 pb-0">Lambda Upsilon Lambda<br><span>Eta</span> Chapter</h1>
+      <p class="mb-4 pb-0">SUNY Albany</p>
+      <a href="https://www.youtube.com/watch?v=g3TvQlUlG6g" class="venobox play-btn mb-4" data-vbtype="video"
+        data-autoplay="true"></a>
+      <a href="#about" class="about-btn scrollto">About Eta</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12" id="aboutChapter">
+            <h2>About Eta Chapter</h2>
+            <p>On April 8th, 1991 the Eta Chapter of La Unidad Latina, Lambda Upsilon Lambda
+              Fraternity, Inc. was
+              established at the State University of New York at Albany.<br>
+
+
+
+              The Eta "Aint None Greata" Chapter was founded by:</p>
+
+            Andrei Uyehara</br>
+            William Rodriguez Jr.<br>
+            Miguel Che Alonzo<br>
+            George David Alicea<br>
+            Juan Bauptiste Valdez<br>
+            Juan Isidro Sanchez<br>
+            Jose Luis Castillo <br>
+
+
+            <p><br>These Hermanos and Hermanas felt a need for an organization that would address the desires and
+              concerns of
+              Latinos within the university and the community. Since its establishment at Binghamton, La Unidad Latina
+              has served as a forefront in addressing issues and consciousness about our Latino culture to all. It has
+              served to inspire pride amongst all Hermanos, Latinos in the university, as well as within the Binghamton
+              community. La Unidad Latina believes in teaching others, specifically the children of our next generation,
+              what it is to be a Latino/a. We understand that in order for us to progress we must know where we are,
+              where we are going, and most importantly, we must know where we came from. This notion strongly anchors La
+              Unidad Latina to strive for the preservation of our raíses culturales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Speakers Section
+    ============================-->
+    <section id="speakers" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>La Unidad Latina</h2>
+          <!-- <p></p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/culture.jpg" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="mission-statement.html">Mission Statement</a></h3>
+                <p>La Unidad Latina Lambda Upsilon Lambda Fraternity Inc</p>
+                <!-- <div class="social">
+                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/brotherhood.jpg" alt="Speaker 2" class="img-fluid">
+              <div class="details">
+                <h3><a href="eta-history.html">Chapter History</a></h3>
+                <p>Eta Aint None Greata</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/grill.jpg" alt="Speaker 3" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Large Network of Alumni Hermanos</a></h3>
+                <p>Para Siempre</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/quote.jpg" alt="Speaker 4" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">P.A.T.H.E Initiative Scholarship</a></h3>
+                <p>Never stop giving back</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker">
+              <img src="img/speakers/lambdaLife.jpg" alt="Speaker 5" class="img-fluid">
+              <div class="details">
+                <h3><a href="speaker-details.html">Contact Us</a></h3>
+                <p>Please Feel Free To Contact Us with Any Questions Or Concerns</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <!-- <section id="schedule" class="section-with-bg">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h2>Event Schedule</h2>
+          <p>Here is our event schedule</p>
+        </div>
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">Day 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">Day 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">Day 3</a>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius
+          necessitatibus voluptatem quis labore perspiciatis quia.</h3>
+
+        <div class="tab-content row justify-content-center"> -->
+
+    <!-- Schdule Day 1 -->
+    <!-- <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>09:30 AM</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Fugit voluptas iusto maiores temporibus autem numquam magnam.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Keynote <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div> -->
+    <!-- End Schdule Day 1 -->
+
+    <!-- Schdule Day 2 -->
+    <!-- <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div> -->
+    <!-- End Schdule Day 2 -->
+
+    <!-- Schdule Day 3 -->
+    <!-- <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>10:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
+                </div>
+                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
+                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>11:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
+                </div>
+                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
+                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>12:00 AM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                </div>
+                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
+                <p>Facere provident incidunt quos voluptas.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>02:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
+                </div>
+                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
+                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>03:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
+                </div>
+                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
+                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>04:00 PM</time></div>
+              <div class="col-md-10">
+                <div class="speaker">
+                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
+                </div>
+                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
+              </div>
+            </div>
+
+          </div> -->
+    <!-- End Schdule Day 2 -->
+
+    <!-- </div>
+
+      </div>
+
+    </section> -->
+
+    <!--==========================
+      Gallery Section
+    ============================-->
+    <section id="gallery" class="wow fadeInUp">
+
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <!-- <p>Check our gallery from the recent events</p> -->
+        </div>
+      </div>
+
+      <div class="owl-carousel gallery-carousel">
+        <a href="img/gallery/IMG1.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG1.JPG"
+            alt=""></a>
+        <a href="img/gallery/IMG2.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG2.JPG"
+            alt=""></a>
+        <a href="img/gallery/IMG3.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG3.JPG"
+            alt=""></a>
+        <a href="img/gallery/IMG4.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG4.JPG"
+            alt=""></a>
+        <a href="img/gallery/IMG5.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG5.JPG"
+            alt=""></a>
+        <a href="img/gallery/IMG6.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG6.JPG"
+            alt=""></a>
+        <a href="img/gallery/IMG7.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG7.JPG"
+            alt=""></a>
+        <a href="img/gallery/IMG8.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG8.JPG"
+            alt=""></a>
+      </div>
+
+    </section>
+
+    <!--==========================
+      F.A.Q Section
+    ============================-->
+    <section id="faq" class="wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>F.A.Q </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <ul id="faq-list">
+
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#faq1">General Facts
+                  <i class="fa fa-minus-circle"></i></a>
+                <div id="faq1" class="collapse" data-parent="#faq-list">
+                  <p>
+                    <strong>Official Name:</strong> La Unidad Latina, Lambda Upsilon Lambda Fraternity, Incorporated<br>
+                    <strong>Founding Institution:</strong>Cornell University – Ithaca, NY <br>
+                    <strong>Founding Date: </strong>February 19, 1982 <br>
+                    <strong>Founding Fathers: </strong> 13 (11 Undergraduates, 1 Faculty, 1 Administrator) <br>
+                    <strong>Fraternal Colors: </strong> Brown, Gold, Red and White <br>
+                    <strong>Fraternal Motto: </strong>“La Unidad Para Siempre” <br>
+                    <strong>Nickname: </strong> Lambdas <br>
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq2" class="collapsed">Fraternal Crest <i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq2" class="collapse" data-parent="#faq-list">
+                  <p>
+                    <img src="img/lul_crest.png" alt="crest">
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq3" class="collapsed">Fraternal Symbol <i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq3" class="collapse" data-parent="#faq-list">
+                  <p>
+                    <img src="img/lul_symbol.png" alt="Symbol">
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq4" class="collapsed">New Membership Education<i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq4" class="collapse" data-parent="#faq-list">
+                  <p>
+                    Those who undergo our New Membership Education are referred to as Caballeros
+                    A Caballero signifies a gentlemen and/or knight in the Spanish language. As the title indicates,
+                    Caballeros are expected to conduct themselves with respect and chivalry at all times, especially
+                    upon receiving the privilege of becoming an Hermano de La Fraternidad. All of our esteemed members
+                    carry this trait with them in all aspects of life, beyond the membership intake process.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq5" class="collapsed">Interesting Facts<i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq5" class="collapse" data-parent="#faq-list">
+                  <p>
+                    <ul>
+                      <p>1st Latino Fraternity to be chartered at an Ivy League Institution</p>
+                      <p>La Unidad Latina is a Latino-based, multi-ethnic, non profit community service organization
+                        with an extremely diverse and rich membership</p>
+                      <p>Only Latino Fraternity to be chartered at all Ivy League Universities</p>
+                      <p>La Unidad Latina is a member of the National Association of Latino Fraternal Organizations
+                        (NALFO).</p>
+                      <p>According to U.S. News and World Report’s 2019 Best Colleges and Universities Edition, La
+                        Unidad Latina alumni network extends to:</p>
+                      <p><strong>9 of the United States’ 10 Best Colleges</strong> (Princeton, Harvard, Columbia, MIT,
+                        University of Chicago, Yale, Duke, University of Pennsylvania, Johns Hopkins)
+                        <strong>19 of the United States’ 30 Best Colleges</strong>(Princeton, Harvard, Columbia, MIT,
+                        University of
+                        Chicago, Yale, Duke, University of Pennsylvania, Johns Hopkins, Northwestern, Dartmouth,
+                        Brown, Cornell, Georgetown, UC Berkeley, University of Southern California, University of
+                        Virginia, Tufts, New York University)</p>
+                      <p>La Unidad Latina is a nationally insured organization.</p>
+                      <p>Recognized nationally by former First Lady, Senator Hillary Clinton and the former White House
+                        administration for our continual leadership and community service efforts.</p>
+                      <p>Hermano Rubén Jose King-Shaw Jr.(Alpha ’83) has the ILR Building at Cornell University named
+                        after him and his wife and has been appointed to the Board of Trustees for Cornell University.
+                      </p>
+                      <p>Hermano Eduardo Penalver is the 1st Latino Law Professor at Cornell</p>
+                    </ul>
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq6" class="collapsed">Honorary Hermanos<i
+                    class="fa fa-minus-circle"></i></a>
+                <div id="faq6" class="collapse" data-parent="#faq-list">
+                  <p>
+                    <p>
+                      <strong>Hermano Dr. Jaime Martinez-Tolentino</strong> – Dr. Jaime Martinez-Tolentino holds a BA &
+                      MA
+                      in French from
+                      New York University, a Ph.D from the University of Madrid, a Ph. D from the University of
+                      Massachusetts, and a Ph. D from Purdue University in Spanish Literature and History. An expert on
+                      Latin American Literature, he is the author of fourteen books, ten of which are devoted to
+                      literary
+                      criticism or research in linguistics. He is also a creative writer with two books of published
+                      short
+                      stories and a play. He teaches courses on Latin American literature and culture and is fluent in
+                      five languages: Spanish, English, French, Portuguese, and German
+                    </p>
+                    <p>
+                      <strong> Hermano Piri Thomas</strong>– Reknown poet and author, among his works is Down These
+                      Mean
+                      Streets, a novel
+                      which is a critically aclaimed best-seller.
+                    </p>
+                    <p>
+                      <strong>Hermano Luis Miranda</strong>– Former head of the Hispanic Federation also served as
+                      Special Advisor and the
+                      Director of the Mayor’s Office for Hispanic Affairs during the Koch administration. During his
+                      distinguished career, Mr. Miranda has served as a consultant to the Ford Foundation, Teachers
+                      College at Columbia University and Boricua College, among other institutions.
+                    </p>
+                    <p>
+                      <strong>Hermano Roberto Ramirez (Bronx Democratic County Chairman and New York State Assemblyman
+                        78th A.D.)</strong>
+                      – Assemblyman Ramirez has represented the Fordham/Tremont section of the northwest Bronx since
+                      1990.
+                      Assemblyman Ramirez has distinguished himself as a legislative leader in the areas of health care,
+                      taxation, economic development, education and welfare reform. He is also Chairman of the NY State
+                      Assemby Social Services Committee and Chairman of the New York State Puerto Rican Hispanic Task
+                      force.
+                    </p>
+                    <p>
+                      <strong>Hermano Juan Figueroa</strong> – Chairman of the Puerto Rican Legal Defense Fund
+                      Juan A. Figueroa has been a long-time champion of the Latino community tackling such issues as
+                      affirmative action and language rights. Mr. Figueroa served on the Connecticut General Assembly
+                      and
+                      was the first Puerto Rican State Representative from the Third District in Hartford.
+                    </p>
+                    <p>
+                      <strong>Hermano Guillermo Linares</strong>– New York City Council Member, 10th District
+                      Hermano Linares was first elected to the New York City Council in a special election in 1991, and
+                      was subsequently reelected, in 1993 to a full 4-year term. In January of 1995, Linares was
+                      appointed
+                      to the White House Commission for educational Excellence for Hispanic Americans.
+                    </p>
+                    <strong>Hermano Kaleil D. Isaza Tuzman (CEO and Co-founder of govWorks, Inc.)</strong>– KaleiI D.
+                    Isaza Tuzman is
+                    the Chief Executive Officer and Co-Founder of govWorks. He is responsible for the development and
+                    execution of the strategic business plan and for managing the focus and direction of the company.
+                  </p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Modal Order Form -->
+    <!-- <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control">
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div> -->
+    <!-- </div>/.modal-content
+        </div>/.modal-dialog
+      </div>/.modal -->
+
+    <!-- </section> -->
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <!-- <p>Nihil officia ut sint molestiae tenetur.</p> -->
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address>1400 Washington Ave, Albany, NY 12222</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 footer-info">
+            <img src="img/crest.png" alt="TheCrest">
+            <p>© 2019 La Unidad Latina, Lambda Upsilon Lambda Fraternity Inc., All Rights Reserved.</p>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Lambda Upsilon Lambda 511 Sixth Avenue, PMB # 39<br>
+              New York, NY 10011<br>
+              United States <br>
+            </p>
+
+            <div class="social-links">
+              <a href="https://twitter.com/Lambdas1982" class="twitter" target="blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/Lambdas1982" class="facebook" target="blank"><i
+                  class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/Lambdas1982/" class="instagram" target="blank"><i
+                  class="fa fa-instagram"></i></a>
+              <a href="https://www.youtube.com/user/Lambdas1982?sub_confirmation=1" class="youtube"><i
+                  class="fa fa-youtube"></i></a>
+              <a href="https://www.linkedin.com/groups/?home=&gid=36646" class="linkedin" target="blank"><i
+                  class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
