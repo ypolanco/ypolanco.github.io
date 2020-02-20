@@ -383,7 +383,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(6, 12, 34, 0.9);
+  background: rgba(101, 56, 25, 0.9);
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -444,7 +444,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(101, 56, 25, 0.8);
   display: none;
 }
 
@@ -714,7 +714,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #speakers .speaker .details {
-  background: rgba(6, 12, 34, 0.76);
+  background: rgba(101, 56, 25, 0.76);
   position: absolute;
   left: 0;
   bottom: -30px;
@@ -1172,7 +1172,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #subscribe:before {
   content: "";
-  background: rgba(6, 12, 34, 0.6);
+  background: rgba(101, 56, 25, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1224,11 +1224,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: none;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+  box-shadow: 0 10px 25px 0 rgba(101, 56, 25, 0.1);
 }
 
 #buy-tickets .card:hover {
-  box-shadow: 0 10px 35px 0 rgba(6, 12, 34, 0.2);
+  box-shadow: 0 10px 35px 0 rgba(101, 56, 25, 0.2);
 }
 
 #buy-tickets .card hr {
@@ -1598,7 +1598,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 991px) {
   #header {
-    background: rgba(6, 12, 34, 0.98);
+    background: rgba(101, 56, 25, 0.98);
     height: 70px;
     padding: 15px 0;
     transition: all 0.5s;
