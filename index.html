@@ -1,550 +1,827 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come after these tags -->
 
-<head>
-  <meta charset="utf-8">
-  <title>La Unidad Latina - Eta Chapter</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+    <!-- Fill in the following meta tags -->
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="description" content="Description" />
+    <meta name="author" content="Author" />
 
-  <!-- Favicons -->
-  <link href="img/crest.png" rel="icon">
-  <link href="img/crest.png" rel="icon">
+    <!-- Change the site title -->
+    <title>Jp Polanco</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
-    rel="stylesheet">
+    <!-- You can regenerate the favicons as you wish using http://realfavicongenerator.net/ -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/venobox/venobox.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:200,300,300i,400,700"
+      rel="stylesheet"
+    />
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
 
-  <!-- =======================================================
-    Theme Name: TheEvent
-    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-</head>
+    <!-- Pretty Photo -->
+    <link rel="stylesheet" href="css/prettyPhoto.css" />
 
-<body>
+    <!-- Flickity -->
+    <link rel="stylesheet" href="css/flickity.css" />
 
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header">
-    <div class="container">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
 
-      <div id="logo" class="pull-left">
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
-        <a href="#intro" class="scrollto"><img src="img/lul_crest.png" alt="" title=""></a>
-      </div>
+    <!-- custom.css - the styling for this template -->
+    <link rel="stylesheet" href="css/custom.css" />
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html">Home</a></li>
-          <li><a href="mission-statement.html">Mission Statement</a></li>
-          <li><a href="eta-history.html">Eta History</a></li>
-          <li><a href="pathe.html">PATHE</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="http://www.launidadlatina.org/" target="_blank">National Page</a></li>
-          <li class="buy-tickets"><a href="">Hermano Login</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
+    <!-- Modernizr -->
+    <script src="js/modernizr-custom.js"></script>
+  </head>
 
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro">
-    <div class="intro-container wow fadeIn">
-      <h1 class="mb-4 pb-0">Lambda Upsilon Lambda<br><span>Eta</span> Chapter</h1>
-      <p class="mb-4 pb-0">Aint None Greata</p>
-      <a href="https://vimeo.com/163084458" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-    </div>
-  </section>
+  <body>
+    <!-- status spinner showing while loading the page -->
+    <div id="preloader"></div>
 
-  <main id="main">
+    <!-- HEADER -->
+    <header>
+      <nav id="mySidenav" class="sidenav navbar-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a class="nav-link" href="#hero">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Skills</a>
+        <a class="nav-link" href="#about2">Portfolio</a>
+        <a class="nav-link" href="#contact">Stay In Touch</a>
+      </nav>
+      <span id="openNav" onclick="openNav()">&#9776;</span>
+    </header>
 
-    <!--==========================
-      About Section
-    ============================-->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12" id="aboutChapter">
-            <h2>About Eta Chapter</h2>
-            <p>On April 8th, 1991 the Eta Chapter of La Unidad Latina, Lambda Upsilon Lambda
-              Fraternity, Inc. was
-              established at the State University of New York at Albany.<br>
+    <!-- HEADER END -->
 
+    <div id="content-wrap">
+      <!-- HERO AREA -->
+      <div
+        class="jumbotron"
+        id="hero"
+        data-stellar-background-ratio="0.5"
+        data-stellar-vertical-offset="0"
+      >
+        <div class="container">
+          <h1>Hello, I am JP Polanco</h1>
+          <span class="typed">I am web developer</span>
 
-
-              The Eta "Aint None Greata" Chapter was founded by:</p>
-
-            Andrei Uyehara</br>
-            William Rodriguez Jr.<br>
-            Miguel Che Alonzo<br>
-            George David Alicea<br>
-            Juan Bauptiste Valdez<br>
-            Juan Isidro Sanchez<br>
-            Jose Luis Castillo <br>
-
-
-            <p><br>These Hermanos and Hermanas felt a need for an organization that would address the desires and
-              concerns of
-              Latinos within the university and the community. Since its establishment at Albany, La Unidad Latina
-              has served as a forefront in addressing issues and consciousness about our Latino culture to all. It has
-              served to inspire pride amongst all Hermanos, Latinos in the university, as well as within the Albany
-              community. La Unidad Latina believes in teaching others, specifically the children of our next generation,
-              what it is to be a Latino/a. We understand that in order for us to progress we must know where we are,
-              where we are going, and most importantly, we must know where we came from. This notion strongly anchors La
-              Unidad Latina to strive for the preservation of our raíses culturales.</p>
-          </div>
+          <div class="typed-wrap"></div>
+          <a
+            href="#about2"
+            class="btn btn-primary portfolio-link scroll-link"
+            >See my portfolio</a
+          >
         </div>
       </div>
-    </section>
+      <!-- HERO AREA END -->
 
-    <!--==========================
-      Speakers Section
-    ============================-->
-    <section id="speakers" class="wow fadeInUp">
-      <div class="container">
+      <!-- bouncing arrow -->
+      <div class="arrow-wrap">
+        <a
+          href="#about"
+          class="arrow down-bounce scroll-link fa fa-angle-double-down"
+        ></a>
+      </div>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="photo-wrap">
+                <img src="img/JP-1.jpg" class="photo" alt="" />
+
+                <div class="photo-overlay">
+                  <div class="photo-text social">
+                    <a
+                    href="mailto:y.polanco12@gmail.com/"
+                    target="_blank"
+                    ><i class="fa fa-envelope"></i
+                  ></a>
+                    <a
+                      href="https://www.linkedin.com/in/jppolanco/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                    <a href="https://github.com/ypolanco" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="aboutRight" class="col-lg-6 col-12">
+              <div>
+                <!-- <h4>Hello! I am JP</h4> -->
+
+                <h2>My Journey to Software Engineering</h2>
+              </div>
+              <div>
+                <p>
+                	Growing up my first love was technology, coming in at a close second was baseball. I remember the first laptop that I held in my hands, it was a 2003 IBM Thinkpad. I was holding this laptop and simultaneously looking at a TV that seemed to be from 1982. The technological gap in my living room that morning allowed me to make a decision that would change the trajectory of my life. That morning I decided that I was going to pursue a career in the technology space.
+                </p>
+
+                <p>
+                  The Journey was long but rewarding. I learned from many different spaces and industries. From data management, database design, database implementation, financial technology support to data sales, my journey has been extensive. However one thing remained true, my love for technology continued to grow. My desire to solve problems in the world with technology increased every day! This leads me to General Assembly where I became a full stacked software engineer. Today I continue to impact the lives around me and solve problems, with the same tool that inspired me while young, technology!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT END -->
+
+      <!-- SERVICES -->
+      <section id="services">
         <div class="section-header">
-          <h2>La Unidad Latina</h2>
-          <!-- <p></p> -->
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/culture.jpg" alt="Speaker 1" class="img-fluid">
-              <div class="details">
-                <h3><a href="mission-statement.html">Mission Statement</a></h3>
-                <p>La Unidad Latina Lambda Upsilon Lambda Fraternity Inc</p>
-                <!-- <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/brotherhood.jpg" alt="Speaker 2" class="img-fluid">
-              <div class="details">
-                <h3><a href="eta-history.html">Chapter History</a></h3>
-                <p>Eta Aint None Greata</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="speaker">
-              <img src="img/speakers/quote.jpg" alt="Speaker 4" class="img-fluid">
-              <div class="details">
-                <h3><a href="pathe.html">P.A.T.H.E Initiative Scholarship</a></h3>
-                <p>Never stop giving back</p>
-              </div>
-            </div>
+          <div>
+            <h2>skills</h2>
           </div>
         </div>
-      </div>
+        <div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/mongo.png" alt="" class="circle" /></div>
+                  <h3>MongoDB</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/express.jpg" alt="" class="circle" /></div>
+                  <h3>Express</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/react.png" alt="" class="circle" /></div>
+                  <h3>React</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/node-js.png" alt="" class="circle" /></div>
+                  <h3>Node JS</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/js-logo.png" alt="" class="circle" /></div>
+                  <h3>Javascript</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/ruby.png" alt="" class="circle" /></div>
+                  <h3>Ruby</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/rails.png" alt="" class="circle" /></div>
+                  <h3>Rails</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/html.png" alt="" class="circle" /></div>
+                  <h3>HTML</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/css.png" alt="" class="circle" /></div>
+                  <h3>CSS</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/sql.png" alt="" class="circle" /></div>
+                  <h3>MYSQL</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div><img src="img/postgre.png" alt="" class="circle" /></div>
+                  <h3>PostgreSQL</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">
+                  <div>
+                    <img src="img/firebase.png" alt="" class="circle" />
+                  </div>
+                  <h3>Google Firebase</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES END -->
 
-    </section>
-
-    <!--==========================
-      Gallery Section
-    ============================-->
-    <section id="gallery" class="wow fadeInUp">
-
-      <div class="container">
+      <!-- EXPERIENCE -->
+      <section id="experience">
         <div class="section-header">
-          <h2>Gallery</h2>
-          <!-- <p>Check our gallery from the recent events</p> -->
-        </div>
-      </div>
-
-      <div class="owl-carousel gallery-carousel">
-        <a href="img/gallery/IMG1.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG1.JPG"
-            alt=""></a>
-        <a href="img/gallery/IMG2.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG2.JPG"
-            alt=""></a>
-        <a href="img/gallery/IMG3.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG3.JPG"
-            alt=""></a>
-        <a href="img/gallery/IMG4.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG4.JPG"
-            alt=""></a>
-        <a href="img/gallery/IMG5.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG5.JPG"
-            alt=""></a>
-        <a href="img/gallery/IMG6.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG6.JPG"
-            alt=""></a>
-        <a href="img/gallery/IMG7.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG7.JPG"
-            alt=""></a>
-        <a href="img/gallery/IMG8.JPG" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/IMG8.JPG"
-            alt=""></a>
-      </div>
-
-    </section>
-
-    <!--==========================
-      F.A.Q Section
-    ============================-->
-    <section id="faq" class="wow fadeInUp">
-
-      <div class="container">
-
-        <div class="section-header">
-          <h2>F.A.Q </h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <ul id="faq-list">
-
-              <li>
-                <a data-toggle="collapse" class="collapsed" href="#faq1">General Facts
-                  <i class="fa fa-minus-circle"></i></a>
-                <div id="faq1" class="collapse" data-parent="#faq-list">
-                  <p>
-                    <strong>Official Name:</strong> La Unidad Latina, Lambda Upsilon Lambda Fraternity, Incorporated<br>
-                    <strong>Founding Institution:</strong>Cornell University – Ithaca, NY <br>
-                    <strong>Founding Date: </strong>February 19, 1982 <br>
-                    <strong>Founding Fathers: </strong> 13 (11 Undergraduates, 1 Faculty, 1 Administrator) <br>
-                    <strong>Fraternal Colors: </strong> Brown, Gold, Red and White <br>
-                    <strong>Fraternal Motto: </strong>“La Unidad Para Siempre” <br>
-                    <strong>Nickname: </strong> Lambdas <br>
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <a data-toggle="collapse" href="#faq2" class="collapsed">Fraternal Crest <i
-                    class="fa fa-minus-circle"></i></a>
-                <div id="faq2" class="collapse" data-parent="#faq-list">
-                  <p>
-                    <img src="img/lul_crest.png" alt="crest">
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <a data-toggle="collapse" href="#faq3" class="collapsed">Fraternal Symbol <i
-                    class="fa fa-minus-circle"></i></a>
-                <div id="faq3" class="collapse" data-parent="#faq-list">
-                  <p>
-                    <img src="img/lul_symbol.png" alt="Symbol">
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <a data-toggle="collapse" href="#faq4" class="collapsed">New Membership Education<i
-                    class="fa fa-minus-circle"></i></a>
-                <div id="faq4" class="collapse" data-parent="#faq-list">
-                  <p>
-                    Those who undergo our New Membership Education are referred to as Caballeros
-                    A Caballero signifies a gentlemen and/or knight in the Spanish language. As the title indicates,
-                    Caballeros are expected to conduct themselves with respect and chivalry at all times, especially
-                    upon receiving the privilege of becoming an Hermano de La Fraternidad. All of our esteemed members
-                    carry this trait with them in all aspects of life, beyond the membership intake process.
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <a data-toggle="collapse" href="#faq5" class="collapsed">Interesting Facts<i
-                    class="fa fa-minus-circle"></i></a>
-                <div id="faq5" class="collapse" data-parent="#faq-list">
-                  <p>
-                    <ul>
-                      <p>1st Latino Fraternity to be chartered at an Ivy League Institution</p>
-                      <p>La Unidad Latina is a Latino-based, multi-ethnic, non profit community service organization
-                        with an extremely diverse and rich membership</p>
-                      <p>Only Latino Fraternity to be chartered at all Ivy League Universities</p>
-                      <p>La Unidad Latina is a member of the National Association of Latino Fraternal Organizations
-                        (NALFO).</p>
-                      <p>According to U.S. News and World Report’s 2019 Best Colleges and Universities Edition, La
-                        Unidad Latina alumni network extends to:</p>
-                      <p><strong>9 of the United States’ 10 Best Colleges</strong> (Princeton, Harvard, Columbia, MIT,
-                        University of Chicago, Yale, Duke, University of Pennsylvania, Johns Hopkins)
-                        <strong>19 of the United States’ 30 Best Colleges</strong>(Princeton, Harvard, Columbia, MIT,
-                        University of
-                        Chicago, Yale, Duke, University of Pennsylvania, Johns Hopkins, Northwestern, Dartmouth,
-                        Brown, Cornell, Georgetown, UC Berkeley, University of Southern California, University of
-                        Virginia, Tufts, New York University)</p>
-                      <p>La Unidad Latina is a nationally insured organization.</p>
-                      <p>Recognized nationally by former First Lady, Senator Hillary Clinton and the former White House
-                        administration for our continual leadership and community service efforts.</p>
-                      <p>Hermano Rubén Jose King-Shaw Jr.(Alpha ’83) has the ILR Building at Cornell University named
-                        after him and his wife and has been appointed to the Board of Trustees for Cornell University.
-                      </p>
-                      <p>Hermano Eduardo Penalver is the 1st Latino Law Professor at Cornell</p>
-                    </ul>
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <a data-toggle="collapse" href="#faq6" class="collapsed">Honorary Hermanos<i
-                    class="fa fa-minus-circle"></i></a>
-                <div id="faq6" class="collapse" data-parent="#faq-list">
-                  <p>
-                    <p>
-                      <strong>Hermano Dr. Jaime Martinez-Tolentino</strong> – Dr. Jaime Martinez-Tolentino holds a BA &
-                      MA
-                      in French from
-                      New York University, a Ph.D from the University of Madrid, a Ph. D from the University of
-                      Massachusetts, and a Ph. D from Purdue University in Spanish Literature and History. An expert on
-                      Latin American Literature, he is the author of fourteen books, ten of which are devoted to
-                      literary
-                      criticism or research in linguistics. He is also a creative writer with two books of published
-                      short
-                      stories and a play. He teaches courses on Latin American literature and culture and is fluent in
-                      five languages: Spanish, English, French, Portuguese, and German
-                    </p>
-                    <p>
-                      <strong> Hermano Piri Thomas</strong>– Reknown poet and author, among his works is Down These
-                      Mean
-                      Streets, a novel
-                      which is a critically aclaimed best-seller.
-                    </p>
-                    <p>
-                      <strong>Hermano Luis Miranda</strong>– Former head of the Hispanic Federation also served as
-                      Special Advisor and the
-                      Director of the Mayor’s Office for Hispanic Affairs during the Koch administration. During his
-                      distinguished career, Mr. Miranda has served as a consultant to the Ford Foundation, Teachers
-                      College at Columbia University and Boricua College, among other institutions.
-                    </p>
-                    <p>
-                      <strong>Hermano Roberto Ramirez (Bronx Democratic County Chairman and New York State Assemblyman
-                        78th A.D.)</strong>
-                      – Assemblyman Ramirez has represented the Fordham/Tremont section of the northwest Bronx since
-                      1990.
-                      Assemblyman Ramirez has distinguished himself as a legislative leader in the areas of health care,
-                      taxation, economic development, education and welfare reform. He is also Chairman of the NY State
-                      Assemby Social Services Committee and Chairman of the New York State Puerto Rican Hispanic Task
-                      force.
-                    </p>
-                    <p>
-                      <strong>Hermano Juan Figueroa</strong> – Chairman of the Puerto Rican Legal Defense Fund
-                      Juan A. Figueroa has been a long-time champion of the Latino community tackling such issues as
-                      affirmative action and language rights. Mr. Figueroa served on the Connecticut General Assembly
-                      and
-                      was the first Puerto Rican State Representative from the Third District in Hartford.
-                    </p>
-                    <p>
-                      <strong>Hermano Guillermo Linares</strong>– New York City Council Member, 10th District
-                      Hermano Linares was first elected to the New York City Council in a special election in 1991, and
-                      was subsequently reelected, in 1993 to a full 4-year term. In January of 1995, Linares was
-                      appointed
-                      to the White House Commission for educational Excellence for Hispanic Americans.
-                    </p>
-                    <strong>Hermano Kaleil D. Isaza Tuzman (CEO and Co-founder of govWorks, Inc.)</strong>– KaleiI D.
-                    Isaza Tuzman is
-                    the Chief Executive Officer and Co-Founder of govWorks. He is responsible for the development and
-                    execution of the strategic business plan and for managing the focus and direction of the company.
-                  </p>
-                </div>
-              </li>
-
-            </ul>
+          <div>
+            <h2>My Journey</h2>
           </div>
         </div>
+        <div class="container">
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>General Assembly SEI</h3>
+              <!-- <span>2010 - 2015</span> -->
 
-      </div>
-
-    </section>
-
-    <!-- Modal Order Form -->
-    <!-- <div id="buy-ticket-modal" class="modal fade">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Buy Tickets</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form method="POST" action="#">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                  <select id="ticket-type" name="ticket-type" class="form-control">
-                    <option value="">-- Select Your Ticket Type --</option>
-                    <option value="standard-access">Standard Access</option>
-                    <option value="pro-access">Pro Access</option>
-                    <option value="premium-access">Premium Access</option>
-                  </select>
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn">Buy Now</button>
-                </div>
-              </form>
-            </div> -->
-    <!-- </div>/.modal-content
-        </div>/.modal-dialog
-      </div>/.modal -->
-
-    <!-- </section> -->
-
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
-
-      <div class="container">
-
-        <div class="section-header">
-          <h2>Contact Us</h2>
-
-        </div>
-
-        <div class="row contact-info">
-
-          <div class="col-md-6">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>1400 Washington Ave, Albany, NY 12222</address>
+              <p>
+                General Assembly allowed me to add the tools to create full-stack applications, that can change our world. My journey encompassed my years of front end knowledge with backend technologies that have increased my capabilities of software development. 
+              </p>
             </div>
           </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Bloomberg LP</h3>
+              <!-- <span>2015 - 2018</span> -->
 
-          <div class="col-md-6">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:Luletachapter@gmail.com">Luletachapter@gmail.com</a></p>
+              <p>
+                Big Data! My time at Bloomberg was full of learning. From Help Desk to trading systems specialist, my love for technology increased. Selling these products and data feeds to large banks and seeing the immediate impact, was thrilling and fulfilling. 
+              </p>
             </div>
           </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Chief Technology Officer NGO</h3>
+              <!-- <span>2010 - 2015</span> -->
 
-        </div>
-
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
+              <p>
+                There is an understanding of data, and organizing and analyzing was my job. Implementing systems, including workflow, design, Implementing, and training was the impact that I had in the space.
+              </p>
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required"
-                data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
-      </div>
-    </section><!-- #contact -->
-
-  </main>
-
-
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6 footer-info">
-            <img src="img/crest.png" alt="TheCrest">
-            <p>© 2019 La Unidad Latina, Lambda Upsilon Lambda Fraternity Inc., All Rights Reserved.</p>
           </div>
+          <div class="timeline-block timeline-block-right">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>Senior Data Analyst</h3>
+              <!-- <span>2002 - 2010</span> -->
 
-          <div class="col-lg-6 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              Lambda Upsilon Lambda 511 Sixth Avenue, PMB # 39<br>
-              New York, NY 10011<br>
-              United States <br>
+              <p>
+                The opportunity to manipulate data and make a business impact was thrilling and a driving factor in my post-university years. After equipping myself with the skills necessary to help nonprofits organization make a positive impact, I took my talents to the NGO world.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-block timeline-block-left">
+            <div class="marker"></div>
+            <div class="timeline-content">
+              <h3>University at Albany</h3>
+              <!-- <span>2008 - 2012</span> -->
+              <p>
+                Studying Information Science at the University At Albany opened
+                my eyes to data management. Data warehousing and manipulating
+                datasets, became my DNA.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="img/Jp_Polanco_Resume.pdf" download="Jp_Polanco_Resume.pdf" class="btn resume">Download Resume</a>
+      </section>
+      <!-- EXPERIENCE END -->
+
+      <!-- HIRE ME -->
+      <section
+        id="hireme"
+        data-stellar-background-ratio="0.5"
+        data-stellar-vertical-offset="0"
+      >
+        <div class="section-header container">
+          <div class="col-12">
+            <h2 class="animation" data-animation="fadeInLeft">
+              My Ethos
+            </h2>
+            <p class="animation" data-animation="fadeInLeft">
+              Pursue Passions, Not Paychecks
             </p>
-
-            <div class="social-links">
-              <a href="https://twitter.com/Lambdas1982" class="twitter" target="blank"><i class="fa fa-twitter"></i></a>
-              <a href="https://www.facebook.com/Lambdas1982" class="facebook" target="blank"><i
-                  class="fa fa-facebook"></i></a>
-              <a href="https://www.instagram.com/Lambdas1982/" class="instagram" target="blank"><i
-                  class="fa fa-instagram"></i></a>
-              <a href="https://www.youtube.com/user/Lambdas1982?sub_confirmation=1" class="youtube"><i
-                  class="fa fa-youtube"></i></a>
-              <a href="https://www.linkedin.com/groups/?home=&gid=36646" class="linkedin" target="blank"><i
-                  class="fa fa-linkedin"></i></a>
-            </div>
-
+            <p class="animation" data-animation="fadeInLeft">
+              Different Perspectives Matter
+            </p>
+            <p class="animation" data-animation="fadeInLeft">
+              Believe in Change
+            </p>
+            <p class="animation" data-animation="fadeInLeft">
+              Don't Take Yourself Too Seriously
+            </p>
+            <p class="animation" data-animation="fadeInLeft">
+              Be Artful, Engaging, Structured, and Relentless
+            </p>
+            <p class="animation" data-animation="fadeInLeft">
+              Prioritize the Customer
+            </p>
+            <p class="animation" data-animation="fadeInLeft">
+              Live A Balanced Life
+            </p>
+            <p class="animation" data-animation="fadeInLeft">
+              Learn Every Day
+            </p>
+            <p class="animation" data-animation="fadeInLeft">
+              Beat Yesterday
+            </p>
           </div>
-
         </div>
-      </div>
+      </section>
+      <!-- HIRE ME END -->
+
+      <!-- PORTFOLIO -->
+      <section id="about2">
+        <h2 class="projects">Projects</h2>
+        <div class="container2">
+          <div class="row2">
+            <div class="col-lg-5 col-12">
+              <div class="photo-wrap2">
+                <img src="img/portfolio/lul.png" class="photo2" alt="" />
+
+                <div class="photo-overlay2">
+                  <h5 class="inner-text">Hermano Portal</h5>
+                  <p class="inner-content">The Hermano Portal was designed for 
+                    a Fraternity to gather their inner communication
+                    and events. Members have access to a calander, profile
+                    of each Hermano, and the ability to communicate internally
+                    on important matters. Technologies used 
+                    <span class="tech-used">HTML, </span>
+                    <span class="tech-used">CSS, </span>
+                    <span class="tech-used">Bootstrap, </span>
+                    <span class="tech-used">Firebase. </span>
+
+                  </p>
+                  <div class="photo-text2 social">
+                    <a
+                      href="https://luletachapter.org/index.html"
+                      target="_blank"
+                      ><i class="fa fa-globe"></i
+                    ></a>
+                    <a href="https://github.com/ypolanco" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="col-lg-5 col-12">
+              <div class="photo-wrap2">
+                <img src="img/portfolio/Santos.png" class="photo2" alt="" />
+
+                <div class="photo-overlay2">
+                  <h5 class="inner-text">Santos Portfolio Manager</h5>
+                  <p class="inner-content">Santos, is the non institutional investors Portfolio Manager. Santos can create portfolios and add securities and metrics to each individual portfolio. Your investments matter, keep track of them with Santos. Core Technologies used 
+                    <span class="tech-used">Ruby on Rails, </span>
+                    <span class="tech-used">React,</span>
+                    <span class="tech-used">HTML,</span>
+                    <span class="tech-used">Css.</span>
+
+                  </p>
+                  <div class="photo-text2 social">
+                    <a
+                      href="http://santos-port.surge.sh/"
+                      target="_blank"
+                      ><i class="fa fa-globe"></i
+                    ></a>
+                    <a href="https://github.com/ypolanco/Santos" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="col-lg-5 col-12">
+              <div class="photo-wrap2">
+                <img src="img/portfolio/peapod.png" class="photo2" alt="Peapod" />
+
+                <div class="photo-overlay2">
+                  <h5 class="inner-text">PeaPod</h5>
+                  <p class="inner-content">The Peopod mobile platform was a team approach on platform recreation.Core Technologies used 
+                    <span class="tech-used">React, </span>
+                    <span class="tech-used">MongoDB, </span>
+                    <span class="tech-used">HTML, </span>
+                    <span class="tech-used">CSS. </span>
+
+                  </p>
+                  <div class="photo-text2 social">
+                    <a
+                      href="https://www.linkedin.com/in/jppolanco/"
+                      target="_blank"
+                      ><i class="fa fa-globe"></i
+                    ></a>
+                    <a href="https://github.com/meganbyrne8/project-three-peapod" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="portfolio">
+        <div class="section-header">
+          <div>
+            <h2>My Work</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div id="portfolio-items" class="row">
+            <div
+              class="item col-md-6 col-lg-4 photography"
+              data-category="photography"
+            >
+           <h3>Hermano Website with Portal</h3>
+            <h5>Technologies</h5>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Bootstrap</p>
+            <p>Fire</p> -->
+              <!-- <a
+                title="Eta Hermano Portal"
+                data-rel="prettyPhoto"
+                href="img/portfolio/lul.png"
+              >
+                <div class="item-wrap">
+                  <div class="photo-overlay">
+                    
+                   
+                  <a
+                    href="https://luletachapter.org/index.html"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="img/portfolio/lul.png"
+                      alt="Eta Chapter Website"
+                    />
+                  </a>
+                  <a
+                      href="https://www.linkedin.com/in/jppolanco/"
+                      target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <p></p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="item col-md-6 col-lg-4 plugins design"
+              data-category="plugins, design"
+            >
+              <a
+                title="Custom description."
+                data-rel="prettyPhoto"
+                href="img/portfolio/Santos.png"
+              >
+                <div class="item-wrap">
+                  <img
+                    class="img-fluid"
+                    src="img/portfolio/Santos.png"
+                    alt="WordPress Plugin"
+                  />
+                </div>
+              </a>
+            </div>
+            <div
+              class="item col-md-6 col-lg-4 plugins photography"
+              data-category="plugins, photography"
+            >
+              <a
+                title="Custom description."
+                data-rel="prettyPhoto"
+                href="img/portfolio/peapod.png"
+              >
+                <div class="item-wrap">
+                  <img
+                    class="img-fluid"
+                    src="img/portfolio/peapod.png"
+                    alt="Photography"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> --> 
+      <!-- PORTFOLIO END -->
+
+      <!-- TESTIMONIALS -->
+      <!-- <section
+        id="testimonials"
+        data-stellar-background-ratio="0.5"
+        data-stellar-vertical-offset="100"
+      >
+        <div class="section-header">
+          <div>
+            <h2>What my clients say</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div id="testimonials-content" class="col-12">
+              <div class="gallery-cell">
+                <div class="testimonial">
+                  <img
+                    class="testimonial-avatar"
+                    src="img/client1.jpg"
+                    alt=""
+                  />
+                  <q class="testimonial-quote"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce
+                    vitae rutrum nulla.</q
+                  >
+                  <span class="testimonial-author">Joe Smith, CEO</span>
+                </div>
+              </div>
+              <div class="gallery-cell">
+                <div class="testimonial">
+                  <img
+                    class="testimonial-avatar"
+                    src="img/client2.jpg"
+                    alt=""
+                  />
+                  <q class="testimonial-quote"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce
+                    vitae rutrum nulla.</q
+                  >
+                  <span class="testimonial-author">Lisa Jones, Designer</span>
+                </div>
+              </div>
+              <div class="gallery-cell">
+                <div class="testimonial">
+                  <img
+                    class="testimonial-avatar"
+                    src="img/client3.jpg"
+                    alt=""
+                  />
+                  <q class="testimonial-quote"
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce
+                    vitae rutrum nulla.</q
+                  >
+                  <span class="testimonial-author">Ryan Waltz, Developer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- TESTIMONIALS END -->
+
+      <!-- BLOG / NEWS -->
+      <!-- <section id="blog">
+        <div class="section-header">
+          <div>
+            <h2>Watch my Blog</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4 item">
+              <img src="img/blog/blog1.jpg" class="img-fluid" alt="" />
+              <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+              <p>
+                Vivamus a mattis augue. Suspendisse aliquam justo in nibh
+                hendrerit lobortis. Proin euismod nisl sem, ac rhoncus ex
+                lacinia nec. Aliquam bibendum vel dui eu tincidunt...
+              </p>
+              <a href="#" class="btn btn-secondary">Read more...</a>
+            </div>
+            <div class="col-12 col-lg-4 item">
+              <img src="img/blog/blog2.jpg" class="img-fluid" alt="" />
+              <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+              <p>
+                Vivamus a mattis augue. Suspendisse aliquam justo in nibh
+                hendrerit lobortis. Proin euismod nisl sem, ac rhoncus ex
+                lacinia nec. Aliquam bibendum vel dui eu tincidunt...
+              </p>
+              <a href="#" class="btn btn-secondary">Read more...</a>
+            </div>
+            <div class="col-12 col-lg-4 item">
+              <img src="img/blog/blog3.jpg" class="img-fluid" alt="" />
+              <h4>Donec hendrerit ultricies orci eget pretium</h4>
+
+              <p>
+                Vivamus a mattis augue. Suspendisse aliquam justo in nibh
+                hendrerit lobortis. Proin euismod nisl sem, ac rhoncus ex
+                lacinia nec. Aliquam bibendum vel dui eu tincidunt...
+              </p>
+              <a href="#" class="btn btn-secondary">Read more...</a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- BLOG / NEWS END -->
+
+      <!-- CONTACT FORM  -->
+      <section id="contact">
+        <div class="section-header">
+          <div>
+            <h2>Stay in Touch</h2>
+
+            <div class="contact-me">
+              <a
+              href="mailto:y.polanco12@gmail.com/"
+              target="_blank"
+              ><i class="fa fa-envelope"></i
+            ></a>
+              <a
+                href="https://www.linkedin.com/in/jppolanco/"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a href="https://www.facebook.com/jp.polanco" target="_blank"
+                ><i class="fa fa-facebook-official"></i
+              ></a>
+              <a href="https://github.com/ypolanco" target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+            </div>
+            <!-- <p>
+              Please fill the form below. I will contact you as soon as
+              possible.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div id="form-messages"></div>
+          <div class="form-wrap">
+            <form
+              id="contact-form"
+              action="api/contact.php"
+              method="post"
+              autocomplete="off"
+            >
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Your Name"
+                    name="name"
+                    id="name"
+                    required
+                  />
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="E-mail"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Subject"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-sm-6">
+                  <textarea
+                    class="form-control"
+                    placeholder="Your Message"
+                    rows="7"
+                    name="message"
+                    id="message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">
+                    SEND MESSAGE
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div id="ajaxLoad"></div>
+          </div>-->
+        </div> 
+      </section>
+      <!-- CONTACT FORM  END -->
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+    
+      <!-- CONTACT INFO  -->
+      <!-- <div id="contact2">
+        <div class="container">
+          <div class="row withMap">
+            <div class="col-12 col-md-8">
+              <div id="googleMap"></div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div><i class="fa fa-envelope"> </i>Y.polanco12@gmail.com</div>
+              <div class="mapinfo">
+                <p>
+                  Donec quis tincidunt nisl. Mauris ac urna libero. Aliquam
+                  cursus, augue eu efficitur dignissim, risus mauris porta diam,
+                  in bibendum lectus enim vitae risus. Maecenas sit amet pretium
+                  quam, in tristique ante. Sed consequat rutrum metus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- CONTACT INFO END -->
+
+      <!-- FOOTER -->
+      <div id="footer-wrap"></div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <p>Copyright &copy; 2020 Jp Polanco</p>
+            </div>
+            <div class="col-12 col-sm-6 social">
+              <p class="pull-right">
+                <a href="https://www.facebook.com/jp.polanco?ref=bookmarks" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/jppolanco/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/ypolanco" target="_blank"><i class="fa fa-github-alt"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER END -->
     </div>
-  </footer><!-- #footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/venobox/venobox.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-</body>
-
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.debouncedresize.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYUCUdT1WkZJFkrpI4IzEObG8_YNcZPg&callback=myMap"></script>
+  </body>
 </html>
