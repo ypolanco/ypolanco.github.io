@@ -693,7 +693,7 @@ nav a.nav-link:focus {
 /******************************************************************************************************************/
 /** PORTFOLIO SECTION                                                                                             */
 /******************************************************************************************************************/
-.resume{
+.resume {
   margin-top: 20px;
   background: rgba(19, 19, 19);
   border: 1px solid #fff;
@@ -702,7 +702,7 @@ nav a.nav-link:focus {
   text-shadow: none;
 }
 
-.resume:hover{
+.resume:hover {
   background: #819a3f;
   color: #fff;
   -webkit-box-shadow: 0 0 0 2px #fff;
@@ -730,7 +730,7 @@ nav a.nav-link:focus {
 .photo2 {
   width: 250%;
   height: 450px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* content for images */
@@ -889,9 +889,7 @@ nav a.nav-link:focus {
 
   .photo2 {
     width: 100%;
-    /* height:400px; */
     object-fit: contain;
-    /* border: 2px solid red; */
   }
 
   .photo-overlay2 {
@@ -899,7 +897,7 @@ nav a.nav-link:focus {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -1122,16 +1120,16 @@ nav a.nav-link:focus {
 /******************************************************************************************************************/
 /** CONTACT FORM                                                                                                  */
 /******************************************************************************************************************/
-.contact-me{
+.contact-me {
   font-size: 44px;
 }
 
-.contact-me a{
+.contact-me a {
   padding: 30px;
   color: white;
 }
 
-.contact-me a:hover{
+.contact-me a:hover {
   color: #819a3f;
 }
 
